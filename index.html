@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Zone - أفضل الألعاب</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎮 Games Zone</h1>
+                </div>
+                
+                <nav class="nav">
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" data-en="Home" data-ar="الرئيسية"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="#about" data-en="About" data-ar="حول"><i class="fas fa-info-circle"></i> حول</a></li>
+                        <li><a href="https://tiktok.com" target="_blank" data-en="TikTok" data-ar="تيكتوك"><i class="fab fa-tiktok"></i> تيكتوك</a></li>
+                        <li class="divider"></li>
+                        <li>
+                            <button class="lang-btn" id="langBtn">
+                                <i class="fas fa-globe"></i>
+                                <span data-en="EN" data-ar="AR">AR</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <button class="close-btn" id="closeSearch">
+                <i class="fas fa-times"></i>
+            </button>
+            <input type="text" class="search-input" id="searchInput" placeholder="ابحث عن لعبة...">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2 data-en="Welcome to Games Zone" data-ar="أهلا بك في Games Zone">أهلا بك في Games Zone</h2>
+                <p data-en="Play the best games now" data-ar="العب أفضل الألعاب الآن">العب أفضل الألعاب الآن</p>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section class="games-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-en="Our Games" data-ar="ألعابنا">ألعابنا</h2>
+                    <p data-en="Choose your favorite game and start playing now!" data-ar="اختر لعبتك المفضلة وابدأ اللعب الآن!">اختر لعبتك المفضلة وابدأ اللعب الآن!</p>
+                </div>
+
+                <div class="games-grid" id="gamesGrid">
+                    <!-- Games will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 data-en="About Us" data-ar="حول موقعنا">حول موقعنا</h2>
+                <p data-en="Games Zone is your destination for the best mobile games. Download and enjoy!" data-ar="Games Zone هو وجهتك لأفضل الألعاب الجوال. حمل واستمتع!">Games Zone هو وجهتك لأفضل الألعاب الجوال. حمل واستمتع!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Game Details Modal -->
+    <div class="game-modal" id="gameModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Game Image">
+                <h2 id="modalTitle"></h2>
+                <div class="modal-rating" id="modalRating"></div>
+                <p id="modalDescription"></p>
+                <div class="modal-buttons">
+                    <button class="btn btn-android" id="downloadAndroid">
+                        <i class="fab fa-android"></i> <span data-en="Download for Android" data-ar="تحميل للأندرويد">تحميل للأندرويد</span>
+                    </button>
+                    <button class="btn btn-iphone" id="downloadIphone">
+                        <i class="fab fa-apple"></i> <span data-en="Download for iPhone" data-ar="تحميل للآيفون">تحميل للآيفون</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Games Zone. <span data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">جميع الحقوق محفوظة</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
